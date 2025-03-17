@@ -4,6 +4,14 @@
     font-family: "IBM Plex Mono", sans-serif;
     font-weight: 300;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.logo
+{
+    width: 30px;
+}
 .container
 {
     max-width: 1300px;
@@ -16,6 +24,14 @@
     justify-content: space-between;
     color: rgb(214, 45, 45);
     border-bottom: 2px solid darkred;
+    align-items: center;
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-right: 9%;
 }
 .name
 {
@@ -33,7 +49,7 @@
 {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     list-style: none;
 
 }
@@ -43,21 +59,65 @@
     text-decoration: none;
     font-size: 23px;
     font-family: "Architype Schwitters W90";
+    transition: 0.5s;
 
 }
 .nav__link:hover
 {
     text-decoration: underline;
 }
-.clayers
+
+.card
+{
+   max-width: 35%;
+   border: 1px solid black;
+   padding: 10px;
+   border-radius: 3%;
+   transition: 0.5s;
+   margin-top: 3%;
+}
+.card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.card__img
+{
+    width: 100%;
+    border-radius: 3%;
+    height: 200px;
+    object-fit:contain;
+}
+.container__cards
 {
     display: flex;
     justify-content: center;
+    gap: 10%;
     flex-wrap: wrap;
-    gap: 100px;
 }
-.clayers__title
+audio {
+    filter: sepia(0%) saturate(70%) grayscale() contrast(99%) invert(12%);
+    width: 500px;
+    height: 25px;
+}
+.audio__list
 {
-    text-align: center;
-    font-size: 80px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ 
+}
+h4
+{
+    margin: 10px;
+    padding: 0;
+}
+.container__clayers
+{
+    display: flex;
+    gap: 50px;
+}
+.clayers__img
+{
+    width: 300px;
+    border-radius: 10px;
 }
