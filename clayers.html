@@ -4,29 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clayers OST</title>
-    <link rel="shortcut icon" href="img/ico.ico" >
+    <link rel="shortcut icon" href="img/UI/ico.ico" >
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Deca:wght@100..900&family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Deca:wght@100..900&family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lexend+Deca:wght@100..900&family=Stick+No+Bills:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/cc47105a398acf6f83fa73335d18457d?family=Architype+Schwitters+W90" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container container__header">
-                <h1 class="name">rashid sadreev</h1>
-                
+            <h1 class="name">rashid sadreev</h1>
             <div class="profile">
                 <h2 class="profile__title">music</h2>
-                <img class="logo" src="img/tapelogo.png">
-                <h2 class="profile__title">sfx</h2>
+                <img class="logo" src="img/UI/tapelogo.png">
+                <h2 class="profile__title">sound<br> design</h2>
             </div>
             <h1 class="monsu">moñsu</h1>
         </div>
-        
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
@@ -46,38 +44,34 @@
             <div class="container container__clayers">
                 <div>
                     <h1 class="clayers__title">Clayers OST</h1>
-                    <img class="clayers__img" src="img/clayersOST.png" alt="">
+                    <img class="clayers__img" src="img/Clayers/clayersOST.png" alt="">
                     <p class="clayers__text">Soundtrack for experemental top-down shooter. Lots of ethnic instrumental</p>  
                 </div>
                 <div>
-                    <ul class="audio__list">
-                        <li class="audio__item">
-                            <h4>Clayers</h4>
-                            <audio controls src="music/Clayers/Clayers.mp3"></audio>
+                    <h3 class="audio__title">Now playing: Clayers</h3>
+                    <p class="album" style="display: none;">Clayers</p>
+                    <audio class="audio-player" controls src="music/Clayers/Clayers.mp3"></audio>
+                    <ul class="playlist__list">
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">Clayers</h3>
                         </li>
-                        <li class="audio__item">
-                            <h4>Prologue</h4>
-                            <audio controls src="music/Clayers/Prologue.mp3"></audio>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">Prologue</h3>
                         </li>
-                        <li class="audio__item">
-                            <h4>Gorynych</h4>
-                            <audio controls src="music/Clayers/Gorynych.mp3"></audio>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">Gorynych</h3>
                         </li>
-                        <li class="audio__item">
-                            <h4>see you clay cowboy...</h4>
-                            <audio controls src="music/Clayers/see you clay cowboy....mp3"></audio>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">see you clay cowboy...</h3>
                         </li>
-                        <li class="audio__item">
-                            <h4>Thank You</h4>
-                            <audio controls src="music/Clayers/thankyou-jingle.mp3"></audio>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">Thank You</h3>
                         </li>
-                        <li class="audio__item">
-                            <h4>Lights and Colors</h4>
-                            <audio controls src="music/Clayers/Lights and Colors.mp3"></audio>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">Lights and Colors</h3>
                         </li>
-                        <li class="audio__item">
-                            <h4>technoclay</h4>
-                            <audio controls src="music/Clayers/technoclay.mp3"></audio>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">technoclay</h3>
                         </li>
                     </ul>
                    
@@ -89,5 +83,6 @@
     <footer class="footer">
 
     </footer>
+    <script src="js/playlist.js"></script>
 </body>
 </html>

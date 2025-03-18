@@ -121,3 +121,21 @@ h4
     width: 300px;
     border-radius: 10px;
 }
+.playlist__item
+{
+    border-left: 2px solid rgb(214, 45, 45);
+    list-style: none;
+    padding-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 0;
+}
+.playlist__list
+{
+    margin: 0;
+    padding: 0;
+}
+.playlist__item:hover
+{
+    transform: scale(1.05);
+} 
