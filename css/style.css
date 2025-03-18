@@ -1,10 +1,12 @@
+/* Главная*/
 *
 {
     font-family: "Lexend Deca", sans-serif;
     font-family: "IBM Plex Mono", sans-serif;
     font-weight: 300;
 }
-a{
+a
+{
     text-decoration: none;
     color: black;
 }
@@ -25,6 +27,7 @@ a{
     color: rgb(214, 45, 45);
     border-bottom: 2px solid darkred;
     align-items: center;
+    flex-wrap: wrap;
 }
 .profile
 {
@@ -67,6 +70,8 @@ a{
     text-decoration: underline;
 }
 
+/* Портфолио */
+
 .card
 {
    max-width: 35%;
@@ -94,32 +99,14 @@ a{
     gap: 10%;
     flex-wrap: wrap;
 }
+
+/* Плейлисты */
+
 audio {
-    filter: sepia(0%) saturate(70%) grayscale() contrast(99%) invert(12%);
+    filter:   drop-shadow(0.2rem 0.4rem 0.1rem rgb(0, 221, 225)) contrast(60%) invert(100%);
+
     width: 500px;
     height: 25px;
-}
-.audio__list
-{
-    list-style: none;
-    margin: 0;
-    padding: 0;
- 
-}
-h4
-{
-    margin: 10px;
-    padding: 0;
-}
-.container__clayers
-{
-    display: flex;
-    gap: 50px;
-}
-.clayers__img
-{
-    width: 300px;
-    border-radius: 10px;
 }
 .playlist__item
 {
@@ -139,3 +126,42 @@ h4
 {
     transform: scale(1.05);
 } 
+
+/* Клеерс */
+
+.container__clayers
+{
+    display: flex;
+    gap: 50px;
+}
+.clayers__img
+{
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Адаптивная верстка */
+
+@media (max-width: 750px)
+{
+    .container__header
+    {
+        flex-direction: column;
+    }
+    .nav__list
+    {
+        gap: 10px;
+    }
+    .card
+    {
+        max-width: 100%;
+    }
+    .container__clayers
+    {
+        flex-direction: column;
+    }
+    audio 
+    {
+        width: 100%;
+    }
+}
