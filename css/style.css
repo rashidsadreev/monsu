@@ -5,6 +5,10 @@
     font-family: "IBM Plex Mono", sans-serif;
     font-weight: 300;
 }
+@font-face {
+    font-family: "Architype Schwitters W90";
+    src: url('../fonts/A/Architype.ttf')  format('truetype');
+  }
 a
 {
     text-decoration: none;
@@ -38,7 +42,6 @@ a
 }
 .name
 {
-    font-family: "Lexend Deca", sans-serif;
     font-family: "Architype Schwitters W90";
     font-size: 50px;
 }
