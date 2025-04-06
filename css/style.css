@@ -20,7 +20,7 @@ a
 }
 .container
 {
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -142,7 +142,23 @@ audio {
     width: 300px;
     border-radius: 10px;
 }
+/* index */
 
+.container__info
+{
+    margin: 4% auto;
+    display: flex;
+    justify-content: space-between;
+}
+.info__content
+{
+    width: 40%;
+}
+.info__img
+{
+    width: 40%;
+    border-radius: 10px;
+}
 /* Адаптивная верстка */
 
 @media (max-width: 750px)
@@ -159,7 +175,7 @@ audio {
     {
         max-width: 100%;
     }
-    .container__clayers
+    .container__clayers, .container__info
     {
         flex-direction: column;
     }
@@ -168,6 +184,10 @@ audio {
         width: 100%;
     }
     iframe
+    {
+        width: 100%;
+    }
+    .info__img, .info__content
     {
         width: 100%;
     }
