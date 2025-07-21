@@ -47,10 +47,26 @@
                     <p class="clayers__text">Soundtrack for experemental top-down shooter. Lots of ethnic instrumental</p>  
                     <iframe src="https://store.steampowered.com/widget/2979020/" frameborder="0" width="646" height="190" style="border-radius: 10px;"></iframe>
                 </div>
-                <div>
-                    <h3 class="audio__title">Now playing: Clayers</h3>
+                <div class="player">
+                    <h3 class="audio__title">Now playing: </h3>
+                    <b class="player__title">Clayers</b>
                     <p class="album" style="display: none;">Clayers</p>
-                    <audio class="audio-player" controls src="music/Clayers/Clayers.mp3"></audio>
+                    <div class="player_div">
+                        
+                        <audio class="player" id="audio" src="music/Clayers/Clayers.mp3" preload="metadata"></audio>
+                        <div class="controls">
+                            <button id="playPauseBtn"></button>
+                            <input type="range" id="volumeSlider" class="volume" min="0" max="1" step="0.01" value="1">
+                        </div>
+                        <div class="progress" id="progressBar">
+                            <div class="progress-filled" id="progressFilled"></div>
+                        </div>
+
+                        <div class="time">
+                            <span id="currentTime">00:00</span>
+                            <span id="duration">00:00</span>
+                        </div>
+                    </div>
                     <ul class="playlist__list">
                         <li class="playlist__item">
                             <h3 class="playlist__song">Clayers</h3>
@@ -65,13 +81,13 @@
                             <h3 class="playlist__song">see you clay cowboy...</h3>
                         </li>
                         <li class="playlist__item">
-                            <h3 class="playlist__song">Thank You</h3>
-                        </li>
-                        <li class="playlist__item">
                             <h3 class="playlist__song">Lights and Colors</h3>
                         </li>
                         <li class="playlist__item">
                             <h3 class="playlist__song">technoclay</h3>
+                        </li>
+                        <li class="playlist__item">
+                            <h3 class="playlist__song">Thank you</h3>
                         </li>
                     </ul>
                    

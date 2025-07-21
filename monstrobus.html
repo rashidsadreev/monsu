@@ -47,10 +47,26 @@
                     <p class="clayers__text">Quiz party game! Get a ride and find out who is the smartest monstor. Chill jazzy soundtrack</p>  
                     <iframe src="https://store.steampowered.com/widget/3164440/" frameborder="0" width="646" height="190" style="border-radius: 10px;"></iframe>
                 </div>
-                <div>
-                    <h3 class="audio__title">Now playing: Bus stop</h3>
+                <div class="player">
+                    <h3 class="audio__title">Now playing: </h3>
+                    <b class="player__title">Bus stop</b>
                     <p class="album" style="display: none;">Monstrobus</p>
-                    <audio class="audio-player" controls src="music/Monstrobus/Bus stop.mp3"></audio>
+                    <div class="player_div">
+                        
+                        <audio class="player" id="audio" src="music/Monstrobus/When do we start already.mp3" preload="metadata"></audio>
+                        <div class="controls">
+                            <button id="playPauseBtn"></button>
+                            <input type="range" id="volumeSlider" class="volume" min="0" max="1" step="0.01" value="1">
+                        </div>
+                        <div class="progress" id="progressBar">
+                            <div class="progress-filled" id="progressFilled"></div>
+                        </div>
+
+                        <div class="time">
+                            <span id="currentTime">00:00</span>
+                            <span id="duration">00:00</span>
+                        </div>
+                    </div>
                     <ul class="playlist__list">
                         <li class="playlist__item">
                             <h3 class="playlist__song">Bus stop</h3>
