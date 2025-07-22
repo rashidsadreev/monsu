@@ -99,7 +99,7 @@ a
 {
     display: flex;
     justify-content: center;
-    gap: 10%;
+    gap: 3%;
     flex-wrap: wrap;
 }
 .feat
@@ -296,6 +296,36 @@ audio {
   color: transparent;
   height: 8px;
 }
+
+/* STRUDEL */
+
+.strudel__list
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    list-style: none;
+
+
+}
+.strudel__item
+{
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 100px;
+        transition: 0.3s ;
+}
+.strudel__item:hover
+{
+    transform: scale(1.1);
+}
+.strudel__title_center
+{
+    text-align: center;
+}
+
+
 /* Адаптивная верстка */
 
 @media (max-width: 750px)
