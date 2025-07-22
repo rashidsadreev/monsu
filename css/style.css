@@ -78,7 +78,7 @@ a
 .card
 {
    max-width: 35%;
-   border: 1px solid black;
+   border: 1px solid rgb(0, 0, 0);
    padding: 10px;
    border-radius: 3%;
    transition: 0.5s;
@@ -102,7 +102,10 @@ a
     gap: 10%;
     flex-wrap: wrap;
 }
-
+.feat
+{
+    color: rgb(214, 45, 45);
+}
 /* Плейлисты */
 
 audio {
