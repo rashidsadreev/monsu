@@ -298,7 +298,19 @@ audio {
   color: transparent;
   height: 8px;
 }
-
+/* QAITALAU */
+.qaitalau__exhibition{
+    display: flex;
+    justify-content: space-between;
+}
+.qaitalau__exhibition__text
+{
+    width: 30%;
+}
+.qaitalau__link{
+    border: 1px solid black;
+    padding: 0px 4px;
+}
 /* STRUDEL */
 
 .strudel__list
@@ -326,7 +338,10 @@ audio {
 {
     text-align: center;
 }
-
+.instagram-media
+{
+    max-width: 60%;
+}
 
 /* Адаптивная верстка */
 
@@ -364,6 +379,18 @@ audio {
     .player {
         width: 90%;
         margin: 0;
+    }
+    .qaitalau__exhibition
+    {
+        flex-direction: column;
+    }
+    .qaitalau__exhibition__text
+    {
+        width: 100%;
+    }
+    .instagram-media
+    {
+        max-width: 100%;
     }
 }
 
