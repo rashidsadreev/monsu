@@ -298,19 +298,7 @@ audio {
   color: transparent;
   height: 8px;
 }
-/* QAITALAU */
-.qaitalau__exhibition{
-    display: flex;
-    justify-content: space-between;
-}
-.qaitalau__exhibition__text
-{
-    width: 30%;
-}
-.qaitalau__link{
-    border: 1px solid black;
-    padding: 0px 4px;
-}
+
 /* STRUDEL */
 
 .strudel__list
@@ -338,11 +326,25 @@ audio {
 {
     text-align: center;
 }
+
+/* QAITALAU */
+.qaitalau__exhibition{
+    display: flex;
+    justify-content: space-between;
+}
+.qaitalau__exhibition__text
+{
+    width: 30%;
+}
+.qaitalau__link{
+    border: 1px solid black;
+    padding: 0px 4px;
+    
+}
 .instagram-media
 {
     max-width: 60%;
 }
-
 /* Адаптивная верстка */
 
 @media (max-width: 750px)
